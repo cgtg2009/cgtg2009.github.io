@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<div id="demo"></div>
+		<button onclick="getLocation()">Get Location</button>
+		
+		<script type="text/javascript">
+			// Lấy đối tượng thẻ div.demo
+			var x = document.getElementById("demo");
+			
+			// Lấy tọa độ hiện tại
+			function getLocation(){
+				navigator.geolocation.getCurrentPosition(showPosition);
+			}
+			
+			// Hiển thị vào div.demo
+			function showPosition(position){
+				x.innerHTML = "Latitude: " + position.coords.latitude 
+				       + "<br>Longitude: " + position.coords.longitude;
+			}
+			
+		</script>
+	</body>
+</html>
