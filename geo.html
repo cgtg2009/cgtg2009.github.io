@@ -19,7 +19,7 @@
 			// Hiển thị vào div.demo
 			function showPosition(position){
 				var latlon = position.coords.latitude + "," + position.coords.longitude;
-				var map_url = "https://maps.googleapis.com/maps/api/staticmap?center=latlon&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C" + position.coords.latitude + "," + position.coords.longitude;
+				var map_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C" + position.coords.latitude + "," + position.coords.longitude;
 				
 				x.innerHTML = "<img src='" + map_url + "'/>";
 			}
