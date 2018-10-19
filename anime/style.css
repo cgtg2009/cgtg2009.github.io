@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0;}
+
+.ve{
+    width:200px;      
+}
+
+.ve path{
+    stroke: #ea0fcb;
+    fill:none;
+    stroke-width: 2px;
+}
