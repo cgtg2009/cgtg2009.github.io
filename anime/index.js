@@ -1,9 +1,12 @@
 
-var cdve = anime({
+var cdtimeline = anime.timeline();
+cdtimeline.add({
     targets: '.ve path',
     strokeDashoffset : [anime.setDashoffset,0],
     duration:3000,
-    delay:1000,
+    delay:function(el, i){
+        return 1000*i;
+    },
     easing: 'easeOutSine',
     direction: 'alternate',
     loop:true
