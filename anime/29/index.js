@@ -20,7 +20,8 @@ avatartimeline.add({
     targets: '.avatar .ve circle',  
     opacity:[1,0],    
     duration:500,   
-    easing: 'linear',   
+    easing: 'linear',
+       
 })
 
 
