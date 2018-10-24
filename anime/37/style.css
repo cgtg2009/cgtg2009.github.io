@@ -1,5 +1,34 @@
 *{margin: 0; padding: 0;}
 
+body{
+    background-color: #f3726d; 
+}
+.jumbotron{
+    background-color: #b93c37;
+    color: #fff;
+}
+.img-thumb{
+    width: 500px;    
+}
+.img-thumb img{
+    opacity: 0;
+}
 .content1{
     background-color: #f3726d;
+   
+}
+#itemToWatch{
+    position: relative;
+}
+#itemToWatch .ve{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#itemToWatch .ve svg{
+    width: 470px;
+    margin: auto;
+    padding: 4px 0 0 0;
 }
