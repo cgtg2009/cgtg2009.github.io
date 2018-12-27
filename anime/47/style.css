@@ -1,0 +1,79 @@
+*{margin: 0; padding: 0;}
+body,html{
+    height: 100%;
+}
+body{
+    background: url(imgs/bg.jpg) 0 30% no-repeat;
+    background-size:cover;    
+}
+
+.bo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.trang{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    
+    font-size: 50px;
+    color: #fff;  
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+}
+.trang > div{
+    background-color: rgba(22, 162, 184, 0.5);
+    padding: 20px 0;
+}
+.trang .chu1{
+    width: 50%;    
+    text-align: right;
+    padding-right: 5%;
+   
+}
+.trang .chu2{
+    width: 50%;    
+    text-align: left;
+    padding-left: 5%;      
+}
+
+.den{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+
+    transition: 0.4s;
+}
+.den .noidung small{
+    color: #888;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.4s;
+}
+.den .noidung small:hover{
+    color: #fff;
+}
+.dilen{
+    transform: translateY(-100%);
+}
+
+.uoneo{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+}
+
