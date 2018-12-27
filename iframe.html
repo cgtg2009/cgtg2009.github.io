@@ -22,10 +22,7 @@
 	$(function(){
 		
 		$('#iframe1').load( function() {
-			console.log( "ready!" );
-			$('#iframe1').srcdoc ="<style type='text/css'>  html{overflow:hidden;}  </style>";
-			$('#iframe1').contents().find("footer")
-			  .append($("<style type='text/css'>  html{overflow:hidden;}  </style>"));
+			$('#iframe1').contents().find("html").css("overflow", "hidden!important");
 		});
 		
 	});
